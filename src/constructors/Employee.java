@@ -6,9 +6,14 @@ public class Employee {
     public String jobTitle;
     public int ID;
     public double salary;
+    public static String companyName;
+
+    static{
+        companyName="Microsoft";
+    }
 
     public Employee(){
-
+salary=1000;
     }
 
     public Employee(String name, String jobTitle, int ID, double salary) {
@@ -24,6 +29,7 @@ public class Employee {
                 ", jobTitle='" + jobTitle + '\'' +
                 ", ID=" + ID +
                 ", salary=" + salary +
+                ", Company Name=" + companyName +
                 '}';
     }
 }
